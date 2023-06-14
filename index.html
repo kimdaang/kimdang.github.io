@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kim Dang - Electrical Engineering Portfolio</title>
+    <meta name="description" content="Kim Dang Portfolio">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Kim Dang</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center py-5" style="margin-top: 50px;">
+        <h1 class="display-4">Welcome to my Portfolio</h1>
+        <p class="lead">Take a look around and get to know more about me and my work</p>
+    </header>
+    
+
+    <section id="about" class="py-5 section-container">
+        <div class="container">
+            <h2 class="section-title"><b>About Me</b></h2>
+            <div class="row">
+                <div class="col-lg-6 text-center">
+                    <img class="profile-img mb-4" src="Pictures/me.jpeg" alt="Profile Picture">
+                </div>
+                <div class="col-lg-6 bordered-text">
+                    <p>My name is Kim Dang, and I am currently a third-year Electrical Engineering student at University of California, Santa Barbara. My passion lies at the intersection of technology and innovation, and I'm driven by the potential of engineering solutions to reshape our world.</p>
+                    <p>Beyond the academic realm, I enjoy biking, as it helps me appreciate the beauty of California's landscapes and further ignites my commitment to sustainability.</p>
+                    <p>In this portfolio, you'll discover a blend of my technical expertise, leadership experiences, and the enthusiasm that fuels my journey in the ever-evolving field of engineering.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="py-5 section-container">
+        <div class="container">
+            <h2 class="section-title"><b>Projects</b></h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="project-image-container" data-toggle="modal" data-target="#robotCarModal">
+                        <img src="Pictures/robotcar.png" alt="Robot Car">
+                        <div class="project-info-overlay">
+                            <h4>Remote Control Car</h4>
+                            <p>A showcase of technical skills and innovative design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project-image-container" data-toggle="modal" data-target="#vexRobotModal">
+                        <img src="Pictures/car1.png" alt="VEX Operated Sensor Robot">
+                        <div class="project-info-overlay">
+                            <h4>VEX Operated Sensor Robot</h4>
+                            <p>An advanced project combining robotics and sensor technologies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="project-image-container" data-toggle="modal" data-target="#doorHandleModal">
+                        <img src="Pictures/doorhandle.jpeg" alt="Door Handle">
+                        <div class="project-info-overlay">
+                            <h4><b>UV-C Door Handle</b></h4>
+                            <p>A research proposal for integrating UV-C light technology into door handles</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project-image-container" data-toggle="modal" data-target="#prostheticArmModal">
+                        <img src="Pictures/arm.jpeg" alt="Prosthetic Arm">
+                        <div class="project-info-overlay">
+                            <h4><b>Prosthetic Arm</b></h4>
+                            <p>A robotic arm designed to assist individuals with disabilities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="project-image-container" data-toggle="modal" data-target="#bridgeModal">
+                        <img src="Pictures/bridge.jpeg" alt="Bridge">
+                        <div class="project-info-overlay">
+                            <h4><b>Balsa wood bridge</b></h4>
+                            <p>A civil engineering project involving the design and construction of a bridge.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project-image-container" data-toggle="modal" data-target="#additionalProjectModal">
+                        <img src="Pictures/additional_project.jpeg" alt="Additional Project">
+                        <div class="project-info-overlay">
+                            <h4><b>Additional Projects</b></h4>
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+       
+ <!-- Project Modals -->
+ <div class="modal fade" id="robotCarModal" tabindex="-1" role="dialog" aria-labelledby="robotCarModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="robotCarModalLabel">Remote Control Car</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="Pictures/robotcar_diagram1.png" alt="Robot Car Diagram 1">
+                        <p>Description 1</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="Pictures/robotcar_diagram2.png" alt="Robot Car Diagram 2">
+                        <p>Description 2</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="Pictures/robotcar_diagram3.png" alt="Robot Car Diagram 3">
+                        <p>Description 3</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="Pictures/robotcar_diagram4.png" alt="Robot Car Diagram 4">
+                        <p>Description 4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="vexRobotModal" tabindex="-1" role="dialog" aria-labelledby="vexRobotModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="vexRobotModalLabel">VEX Operated Sensor Robot</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>An advanced project combining robotics and sensor technologies.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="doorHandleModal" tabindex="-1" role="dialog" aria-labelledby="doorHandleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="doorHandleModalLabel">UV-C Door Handle</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p> UV-C light technology </p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="Pictures/doorhandle_diagram1.png" alt="Door Handle Diagram 1">
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="Pictures/doorhandle_diagram2.png" alt="Door Handle Diagram 2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="Pictures/doorhandle_diagram3.png" alt="Door Handle Diagram 3">
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="Pictures/doorhandle_diagram4.png" alt="Door Handle Diagram 4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Description 1</p>
+                        <p>Description 2</p>
+                        <p>Description 3</p>
+                        <p>Description 4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="prostheticArmModal" tabindex="-1" role="dialog" aria-labelledby="prostheticArmModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="prostheticArmModalLabel">Prosthetic Arm</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>A robotic</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="bridgeModal" tabindex="-1" role="dialog" aria-labelledby="bridgeModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="bridgeModalLabel">Bridge Construction</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>A civil engineering project involving the design and construction of a bridge.</p>
+                <p> Materials used: Balsa wood and elmers glue  </p>
+                <p> Stength to weight ratio: 54,431 grams (force it can withstand) / 72 grams (weight of the bridge)  756.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Additional Projects Modal -->
+<div class="modal fade" id="additionalProjectModal" tabindex="-1" role="dialog" aria-labelledby="additionalProjectModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="additionalProjectModalLabel">Additional Projects</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4>Electrical Engineering Projects</h4>
+                <h5>ECE152A Digital Design</h5>
+                <ul>
+                    <li>Ford 1965 Thunderbird Tail Light</li>
+                    <li>Counter Design with 7-Segment Display</li>
+                    <li>4-Bit Adder</li>
+                    <li>Display A through E on a Seven-Segment Indicator</li>
+                </ul>
+                <h5>ECE10 Series</h5>
+                <ul>
+                    <li>Active Filters using Op Amps</li>
+                    <li>Sinusoidal Steady State</li>
+                    <li>Charge Pump</li>
+                </ul>
+                <h4>Physics Projects</h4>
+                <ul>
+                    <li>Charge to Mass Ratio of the Electron</li>
+                    <li>Frank Hertz</li>
+                    <li>Diffraction and Interference</li>
+                    <li>Atomic Spectra</li>
+                    <li>Photoelectric Effect</li>
+                    <li>Radiation Absorption</li>
+                    <li>Reactive Elements in AC Circuits</li>
+                    <li>Reflection and Refraction</li>
+                    <li>Lenses, Ray Tracing, and Optical Devices</li>
+                    <li>Speed of Sound</li>
+                    <li>Harmonic Motion</li>
+                </ul>
+                <p class="reports-text">* all have extensive reports</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="skills" class="py-5 section-container">
+    <div class="container">
+        <h2 class="section-title text-center"><b>Skills</b></h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Programming Languages</h3>
+                <div class="skill">
+                    <h4>Python</h4>
+                    <p>Proficient</p>
+                </div>
+                <div class="skill">
+                    <h4>JavaScript</h4>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill">
+                    <h4>C</h4>
+                    <p>Advanced</p>
+                </div>
+                <div class="skill">
+                    <h4>Verilog</h4>
+                    <p>Advanced</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h3>Simulation Tools</h3>
+                <div class="skill">
+                    <h4>LTspice</h4>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill">
+                    <h4>ModelSim</h4>
+                    <p>Intermediate</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h3>Hardware Design Tools</h3>
+                <div class="skill">
+                    <h4>Quartus II</h4>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill">
+                    <h4>AutoCAD</h4>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill">
+                    <h4>SOLIDWORKS</h4>
+                    <p>Intermediate</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="associations" class="py-5 section-container">
+    <div class="container">
+        <h2 class="section-title text-center"><b>Associations</b></h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <img class="association-img" src="Pictures/logo.png" alt="WISE">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact-section py-5">
+    <div class="container">
+        <h2 class="section-title"><b>Contact</b></h2>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203133.33398958432!2d-121.98090320569747!3d37.296121084082785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcae48af93ff5%3A0xb99d8c0aca9f717b!2sSan%20Jose%2C%20CA!5e0!3m2!1sen!2sus!4v1686313775338!5m2!1sen!2sus"
+                    style="width: 80%;" height="200" allowfullscreen=""></iframe>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="contact-info">
+                    <h4 class="text-center">Links</h4>
+                    <div class="social d-flex justify-content-center align-items-center">
+                        <div class="text-center">
+                            <a href="https://github.com" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                            <a href="https://www.linkedin.com/in/kim-daang/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+                            <a href="mailto:K_dang@ucsb.edu" target="_blank"><i class="fa fa-envelope fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+</section>
+
+    <footer class="footer bg-dark text-white py-3">
+        <div class="container text-center">
+            <p class="m-0">All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
